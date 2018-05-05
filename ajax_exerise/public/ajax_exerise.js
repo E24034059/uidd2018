@@ -1,0 +1,13 @@
+$(document).ready(function(){
+        $('#ajax_btn').click(function(e){
+             e.preventDefault();
+             $.ajax({
+                  method:"post",
+                  url:'./ajax_post_id',
+                  data:{ajax_post_id:$("input[name=ajax_post_id]").val(),},
+                     success:function(data){
+                          $('#ajax_content').text(data)
+                                           }
+                      })
+                                     })
+                            })

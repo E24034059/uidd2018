@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>ajax_exerise</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+
+    <form action="/post_id" method="post">
+      student id:  <input name="student_id" type="text"><br>
+      <button type="submit">get_name</button>
+    </form>
+
+    <form action="/ajax_post_id" method="post">
+      student id:  <input name="ajax_post_id" type="text"><br>
+      <button id="ajax_btn" type="submit">ajax_get_name</button>
+    </form>
+    <h1 id="ajax_content"></h1>
+    <script src="./ajax_exerise.js"></script>
+  </body>
+</html>
