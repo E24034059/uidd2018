@@ -14,5 +14,7 @@ demosever.js sever運行
 使用時網址是: luffy.ee.ncku.edu.tw:10071
 使用流程    : 檢測cookie的"user"欄位, 若為空=> login頁面   =>登入=>存cookie
                                       不為空=> demo頁面
+                                      
+                                      
               連到demo頁面時會,前端會取cookie的"user_name"欄位,
               然後傳socket.io的"login"事件,監聽"loginResult"事件取得user資料
